@@ -1,0 +1,180 @@
+%% uctest.tex 11/3/94
+%% Copyright (C) 1988-2004 Daniel Gildea, BBF, Ethan Munson.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2003/12/01 or later.
+%
+% This work has the LPPL maintenance status "maintained".
+% 
+% The Current Maintainer of this work is Daniel Gildea.
+
+\documentclass[11pt]{ucthesis}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+\usepackage{enumitem}
+% http://www.texnia.com/archive/enumitem.pdfhttps://www.overleaf.com/project/5f0bf65d690440000103f5cc
+\setenumerate{topsep=5pt, partopsep=15pt, parsep=5pt, rightmargin=25pt}
+% partopsep = dist from top, parsep/itemsep = between each bullet point.
+\setitemize{topsep=5pt, partopsep=15pt, parsep=1pt, rightmargin=5pt}
+\setlist{before=\linespread{1.25}\selectfont,after=\linespread{1.25}\selectfont}
+% \usepackage{framed,color}
+% \definecolor{shadecolor}{rgb}{1,0.8,0.3}
+
+% tried to use this to capitalize bibtex titles with the myPlain.bst custom file but got empty literal stack errors
+ \usepackage{titlecaps}
+ \Addlcwords{the of into}
+
+\widowpenalty = 10000       %prevents orphans/widows
+\clubpenalty = 10000        %prevents orphans/widows
+
+%\usepackage[colorlinks=false]{hyperref}          %needs to be last
+\usepackage[hidelinks]{hyperref}
+
+% Original definition
+% \newcommand\fullref[1]{\autoref{#1} \nameref{#1}} % Two links
+
+% Updated definition, see explanation below
+% Ex: \fullref{section:blah} prints
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} (\nameref*{#1})}} % One single link
+
+
+\def\dsp{\def\baselinestretch{2.0}\large\normalsize}
+\dsp
+\begin{document}
+
+% Declarations for Front Matter
+
+\title{Increasing Authorial Leverage In Generative Narrative Systems}
+\author{Jacob Garbe}
+\degreeyear{2020}
+\degreemonth{September}
+\degree{DOCTOR OF PHILOSOPHY}
+\chair{Professor Michael Mateas}
+\committeememberone{Professor Noah Wardrip-Fruin}
+\committeemembertwo{Professor Ian Horswill}
+\deanlineone{Quentin Williams}
+\deanlinetwo{Acting Vice Provost and Dean of Graduate Studies}
+\deanlinethree{}
+\field{Computer Science}
+\campus{Santa Cruz}
+
+
+\begin{frontmatter}
+
+\maketitle
+\copyrightpage
+
+\tableofcontents
+\listoffigures
+% \listoftables
+
+\begin{abstract}
+Generative narratives are an important subset of interactive narratives in games, enabling works that can provide unique media experiences not possible through more static forms. Such experiences can include character dialogue-driven games, systemic games with narrative bindings to mechanics, dynamic narratives responding to player actions, and many other forms. However, the concomitant authorial burden from creating content for these systems, in comparison with static narrative media, often makes completing generative narrative experiences difficult or infeasible.
+
+This dissertation contributes a framework for evaluating and developing generative narrative systems while avoiding runaway authorial burden. This Authorial Leverage Framework was generalized from pragmatics learned through implementing three generative narrative systems in three particular spaces of interactive narrative, which represent three additional research contributions. The \textit{Ice-Bound} system uses thematic-driven combinatorics to explore the sculptural space of vignette-style stories, seeking to maximize uniqueness while minimizing authorial overhead. StoryAssembler is a hybrid forward state space planner and hierarchical task network (HTN) planner, created to explore how choice-based narratives could be dynamically generated from diegetically embedded planner parameters. Lastly, the \textit{Delve} system seeks to create vignettes whose text can be manipulated and sculpted through an ontologically-connected 3D object system. 
+
+Each of these systems presented their own particular challenges, which were confronted head-on with the intent of creating fully realized interactive experiences. In the course of doing so, pragmatic lessons were learned, which were generalized to form The Authorial Leverage Framework.
+
+It is my hope that this framework and these systems will provide a useful tool for other practitioners and scholars in this area, grounded as they are in the production of playable experiences, whose creation is a critical component of systems-driven scholarship.
+\end{abstract}
+
+\begin{dedication}
+\null\vfil
+{\large
+\begin{center}
+To Noonie
+\\~\\~\\
+And to those that dwell beyond the veil: I humbly concede the point.\\ 
+May you find me yet changeling.
+\end{center}}
+\vfil\null
+\end{dedication}
+
+
+\begin{acknowledgements}
+
+This dissertation is the culmination of a journey started nine years ago, when I packed up my life and left Kentucky to join UCSC as a graduate student. Over the course of the last nine years (and three degrees!) I have found a community that has deeply changed my life forever. There are no words for the sea of memories and light--the laughter and brilliance and struggles and triumphs along the way. For all the impromptu conversations, feverish jams, late-night revelations, and quiet commiserations, I thank all my labmates.
+
+Also: it would have been impossible to finish this dissertation without the support of my partners, my friends, and family. I am deeply indebted to you all--for your patience, your kindness, your insight and bemused tolerance. The journey was longer and more intense than I'd reckoned, but you stood by me the whole way, and gave me the strength to finish.
+
+Heartfelt thanks as well to my advisers Michael Mateas and Noah Wardrip-Fruin, who have been both mentors and friends through the winding course of these past years. I count myself inestimably lucky to have studied under your guidance, and continue the work forward. Thanks also to Ian Horswill, whose insight and generous expertise have been invaluable as my committee member. 
+
+The work continues!
+
+The \textit{story} continues!
+
+Let us begin!
+
+
+\end{acknowledgements}
+
+\end{frontmatter}
+
+%\part{First Part}
+
+\chapter{Introduction}
+\input{text1-Introduction}
+\chapter{Ice-Bound}
+\input{text2-Ice-Bound}
+\chapter{StoryAssembler}
+\input{text3-StoryAssembler}
+\chapter{Delve}
+\input{text4-Delve}
+\chapter{Conclusion and Closing Thoughts}
+\input{text5-Conclusion}
+
+%\begin{table}
+%\begin{tabular}{|l|r|}
+  %\hline 
+%Title & Author \\
+%\hline
+%War And Peace & Leo Tolstoy \\
+%The Great Gatsby & F. Scott Fitzgerald \\ \hline
+%\end{tabular}
+%\caption{A normalsize table.  There has been a complaint that table
+%captions are not single-spaced.  This is odd because the code
+%indicates that they should be.}
+%\end{table}
+
+%\begin{table}
+%\caption{A small table.}
+%\begin{scriptsizetabular}{|l|r|}
+  %\hline 
+%Title & Author \\
+%\hline
+%War And Peace & Leo Tolstoy \\
+%The Great Gatsby & F. Scott Fitzgerald \\ \hline
+%\end{scriptsizetabular}
+%\end{table}
+
+%\chapter{Previous Work}
+%Some other research was once performed.
+
+%\begin{figure}
+%\caption{A first figure.}
+%\end{figure}
+
+%\begin{figure}
+%\caption{A second figure.}
+%\end{figure}
+
+%\chapter{Conclusion}
+
+\nocite{*}
+\bibliographystyle{myPlain}
+\bibliography{uctest}
+
+% \appendix
+% \chapter{Appendix A: Ice-Bound}
+% \input{appendix1-Ice-Bound}
+
+% Ancillary material should be put in appendices, which appear after the
+% bibliography. 
+
+\end{document}
