@@ -47,7 +47,8 @@ Dynamic authoring, on the other hand, may not initially get you as much progress
 
 If a visual helps, here’s two graphs I like to use to illustrate this.
 
-![A graph of authoring effort versus dynamism](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart1.png)
+<!-- ![A graph of authoring effort versus dynamism](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart1.png) -->
+<div align="center"><img alt="A graph of authoring effort versus dynamism" src="https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart1.png"></div>
 
 This first one shows authoring effort versus dynamism / reactivity. The idea is that for games, the more dynamism / reactivity you put in it, the more writing you have to do. The requirements compound, but the progress you make with static authoring doesn’t. So as you push further into this territory, your writing starts to balloon. Imagine this like an open world game with NPCs. Increasing the dynamism by adding new static conversation trees to talk about pets to different NPCs compounds across all NPCs, which starts exploding the writing requirements to cover that.
 
@@ -57,7 +58,8 @@ So given that, we say static authoring hits the Authoring Wall when confronted w
 
 Another way to say the same thing, but with more of a production lens, is looking at “covered game state” versus “units of content”.
 
-![A graph of covered game state versus units of content](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart2.png)
+<div align="center"><img alt="A graph of covered game state versus units of content" src="https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart2.png"></div>
+<!-- ![A graph of covered game state versus units of content](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart2.png) -->
 
 Focusing on dynamic content creation, we could alternatively say the authoring wall is the amount of progress you’d make from static content creation (whatever that is for your game). Again, static authoring always makes incremental progress for each piece of content added, but never gets “bonus” coverage due to compounded things from the dynamic system. So if your dynamic content system isn’t doing better than that, you’re putting in a lot of work for nothing!
 
@@ -67,7 +69,8 @@ That’s what this graph is attempting to show. Even if it’s slower at the beg
 
 That concept, of how content compounds, is called authorial leverage [[2](#note2)]. You want to increase authorial leverage, so that your writers can hit the ambitious targets of your game. This framework will hopefully help you do that, which is why I call it the Authorial Leverage Framework.
 
-![A graph of covered game state versus units of content, with a problem area colored blue](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart3.png)
+<div align="center"><img alt="A graph of covered game state versus units of content, with a problem area colored blue" src="https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart3.png"></div>
+<!-- ![A graph of covered game state versus units of content, with a problem area colored blue](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart3.png) -->
 
 In general, there are two ways teams get in trouble. One: if you’re in the blue area of the graph for too much of production, and the system never “fires on all cylinders”, producers are often tempted to cut back procedural content wholesale to ship with the content you have, not realizing that the more you cut off the end of the curved line, you’re actually maximizing the damage your cuts are doing to your content. Two: when the gains you get from dynamic systems (how steep the curve goes) are too low for the production or technical / QA headaches they introduce to justify their existence, you again often end up cutting them back to ship.
 
