@@ -22,7 +22,6 @@ As games have gotten more complex over the years, players have come to expect mo
 
 Well-formed dynamic narrative systems take work from the get-go. They’re not something lightly slapped on at the end of a project. Specifically, game designers employ them for very specific reasons. They may want players to experience a sense of agency and control through making choices at key narrative points, as in [Telltale games](https://telltale.com/). Maybe they want players to experience a feeling of agency, but through affecting the gameplay system (which in turn affects the narrative), like in _[King of Dragon Pass](https://en.wikipedia.org/wiki/King_of_Dragon_Pass)_ / _[Six Ages](https://sixages.com/)_. Or maybe the dynamism of the narrative system isn't necessarily the focus, but rather an emergent requirement from the narrative needing to support reactive and dynamic gameplay, like Bethesda’s “[Radiant AI / Story](http://gamechronicles.com/qa/elderscrolls4/body.htm)” system, or context-triggered vignettes and quests in _[Hades](https://www.supergiantgames.com/games/hades/)_ or _[Horizon Zero Dawn](https://medium.com/launchcannon/horizon-zero-dawns-narrative-design-with-leszek-szczepanski-77a3abaa28f5)_.
 
-
 ## What Are Their Production Problems?
 
 Those games are so great! Why don’t we see more of this stuff, anyway?
@@ -48,7 +47,7 @@ Dynamic authoring, on the other hand, may not initially get you as much progress
 
 If a visual helps, here’s two graphs I like to use to illustrate this.
 
-![A graph of authoring effort versus dynamism](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart1.jpg)
+![A graph of authoring effort versus dynamism](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart1.png)
 
 This first one shows authoring effort versus dynamism / reactivity. The idea is that for games, the more dynamism / reactivity you put in it, the more writing you have to do. The requirements compound, but the progress you make with static authoring doesn’t. So as you push further into this territory, your writing starts to balloon. Imagine this like an open world game with NPCs. Increasing the dynamism by adding new static conversation trees to talk about pets to different NPCs compounds across all NPCs, which starts exploding the writing requirements to cover that.
 
@@ -58,7 +57,7 @@ So given that, we say static authoring hits the Authoring Wall when confronted w
 
 Another way to say the same thing, but with more of a production lens, is looking at “covered game state” versus “units of content”.
 
-![A graph of covered game state versus units of content](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart2.jpg)
+![A graph of covered game state versus units of content](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart2.png)
 
 Focusing on dynamic content creation, we could alternatively say the authoring wall is the amount of progress you’d make from static content creation (whatever that is for your game). Again, static authoring always makes incremental progress for each piece of content added, but never gets “bonus” coverage due to compounded things from the dynamic system. So if your dynamic content system isn’t doing better than that, you’re putting in a lot of work for nothing!
 
@@ -68,8 +67,7 @@ That’s what this graph is attempting to show. Even if it’s slower at the beg
 
 That concept, of how content compounds, is called authorial leverage [[2](#bookmark=id.qa1eunnawfiz)]. You want to increase authorial leverage, so that your writers can hit the ambitious targets of your game. This framework will hopefully help you do that, which is why I call it the Authorial Leverage Framework.
 
-
-![A graph of covered game state versus units of content, with a problem area colored blue](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart3.jpg)
+![A graph of covered game state versus units of content, with a problem area colored blue](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart3.png)
 
 In general, there are two ways teams get in trouble. One: if you’re in the blue area of the graph for too much of production, and the system never “fires on all cylinders”, producers are often tempted to cut back procedural content wholesale to ship with the content you have, not realizing that the more you cut off the end of the curved line, you’re actually maximizing the damage your cuts are doing to your content. Two: when the gains you get from dynamic systems (how steep the curve goes) are too low for the production or technical / QA headaches they introduce to justify their existence, you again often end up cutting them back to ship.
 
