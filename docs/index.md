@@ -49,6 +49,7 @@ If a visual helps, here’s two graphs I like to use to illustrate this.
 
 <!-- ![A graph of authoring effort versus dynamism](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart1.png) -->
 <div align="center"><img alt="A graph of authoring effort versus dynamism" src="https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart1.png"></div>
+_Graph modified from [Mateas et al.](#note1)_
 
 This first one shows authoring effort versus dynamism / reactivity. The idea is that for games, the more dynamism / reactivity you put in it, the more writing you have to do. The requirements compound, but the progress you make with static authoring doesn’t. So as you push further into this territory, your writing starts to balloon. Imagine this like an open world game with NPCs. Increasing the dynamism by adding new static conversation trees to talk about pets to different NPCs compounds across all NPCs, which starts exploding the writing requirements to cover that.
 
