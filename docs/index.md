@@ -41,7 +41,7 @@ Systems where writing a huge amount of static content is faster than taking time
 
 ## The Authoring Wall
 
-The authoring wall [[1](#bookmark=id.8sdspyci06v9)] is the effort required (for writing or otherwise) to achieve higher levels of dynamic narrative. The general idea is that static authoring gives you reliable incremental progress, but with no compounding effects. It’s easy to scope out, and reliable for hitting project checkpoints, but will never move things along faster than linear progress.
+The authoring wall [[1](#note1)] is the effort required (for writing or otherwise) to achieve higher levels of dynamic narrative. The general idea is that static authoring gives you reliable incremental progress, but with no compounding effects. It’s easy to scope out, and reliable for hitting project checkpoints, but will never move things along faster than linear progress.
 
 Dynamic authoring, on the other hand, may not initially get you as much progress as static authoring, but is constantly compounding. Therefore, at a certain point in production, you start getting way more out of the system than could be achieved with static authoring.
 
@@ -65,7 +65,7 @@ That’s not to say it should be blowing static methods out of the water from th
 
 That’s what this graph is attempting to show. Even if it’s slower at the beginning, you want to get to the point where your dynamic content is more efficient at covering your bases than static content as quickly as possible. And even if it takes longer to write dynamic content (for a variety of factors we’ll get into) if it gets reused dynamically in different contexts enough times (i.e. covering more game states) it’s “faster” than static content. For example, if you’re writing a brief greeting conversation between NPCs with a dynamic system, it may take 10x the time to just write a regular version of it, because you’re adding tags to different parts of it, or conditional logic, or using some funky custom tool your engineers made. But if that piece of content gets used even just 11x more than a static one, it’s still time better spent.
 
-That concept, of how content compounds, is called authorial leverage [[2](#bookmark=id.qa1eunnawfiz)]. You want to increase authorial leverage, so that your writers can hit the ambitious targets of your game. This framework will hopefully help you do that, which is why I call it the Authorial Leverage Framework.
+That concept, of how content compounds, is called authorial leverage [[2](#note2)]. You want to increase authorial leverage, so that your writers can hit the ambitious targets of your game. This framework will hopefully help you do that, which is why I call it the Authorial Leverage Framework.
 
 ![A graph of covered game state versus units of content, with a problem area colored blue](https://logodaedalus.github.io/Authorial-Leverage-Framework/images/chart3.png)
 
@@ -249,11 +249,9 @@ Well, not really. If you wanted to read more, I suggest the [Introduction](https
 
 ## Notes
 
-[1] Michael Mateas, Elizabeth Andre, Ruth Aylett, Mirjam P. Eladhari, Richard Evans, Ana Paiva, Mike Preuss, and Michael Young. _Artificial and Computational Intelligence in Games_ (Dagstuhl Seminar 12191). In _Dagstuhl Reports, Volume 2_. Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2012. [Link](https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=12191)
+[<a name="note1"></a>1] Michael Mateas, Elizabeth Andre, Ruth Aylett, Mirjam P. Eladhari, Richard Evans, Ana Paiva, Mike Preuss, and Michael Young. _Artificial and Computational Intelligence in Games_ (Dagstuhl Seminar 12191). In _Dagstuhl Reports, Volume 2_. Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2012. [Link](https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=12191)
 
-[2] Authorial leverage was first formally defined by Chen et al as “the power a tool
-
-gives an author to define a quality interactive experience in line with their goals, relative to the tool's authorial complexity", although previously used by Strong to talk about combinatoric authoring, and simply as “leverage" by Mateas when discussing semiotic systems that facilitate authoring for complex systems.
+[<a name="note2"></a>2] Authorial leverage was first formally defined by Chen et al as “the power a tool gives an author to define a quality interactive experience in line with their goals, relative to the tool's authorial complexity", although previously used by Strong to talk about combinatoric authoring, and simply as “leverage" by Mateas when discussing semiotic systems that facilitate authoring for complex systems.
 
 
 
