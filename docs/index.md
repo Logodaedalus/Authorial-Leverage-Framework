@@ -79,7 +79,7 @@ If all this seems like a lot, don’t worry! These are the dynamics we’ll be b
 
 ## Why Are You Talking So Much About Scope?
 
-Whichever way you look at it, overcoming the authoring wall requires careful planning and design. And because of this, you should make sure you actually need dynamic narrative content, because it’s an engineering and authoring commitment, and a lot of work! Many times if you really look at your design, it can be satisfied with static content more reliably, as long as you’re ok with writing lots of it.
+Whichever way you look at it, overcoming the authoring wall requires careful planning and design. And because of this, you should make sure you actually need dynamic narrative content, because it’s an engineering and authoring commitment, and a lot of work. Many times if you really look at your design, it can be satisfied with static content more reliably, as long as you’re ok with writing lots of it.
 
 However, for some designs, you definitely need dynamic narrative systems and content to achieve your design goals. And by leaning into the strengths of your systems, you’ll create more useful content than what you’d get from just writing static content. Also, as a general design rule, showing the system’s full power to the player through good content design creates a unique feeling that can both help guide the player's interactions by showing the types of play the system’s good at, and better communicate the story it's trying to tell.
 
@@ -101,7 +101,7 @@ Every game is different, but in general, to tackle the unique design challenge e
 * how much content we’re talking about (Traversability)
 * how hard it is to make it (Authorability)
 
-This framework’s all about asking ourselves tough questions. Traversability’s question is pretty straightforward: how much of the authored content is seen by the player by the time they’ve completed their playthrough? What you use as “completed their playthrough” can be as specific or ambiguous as is useful. But the key components of it, regardless of whether you’re focused on a casual player that won’t ever complete more than 10% of your story, or supporting die-hard fans that platinum the whole thing, are \
+This framework’s all about asking ourselves tough questions. Traversability’s question is pretty straightforward: how much of the authored content is seen by the player by the time they’ve completed their playthrough? What you use as “completed their playthrough” can be as specific or ambiguous as is useful. But the key components of it, regardless of whether you’re focused on a casual player that won’t ever complete more than 10% of your story, or supporting die-hard fans that platinum the whole thing, are
 
 
 
@@ -109,7 +109,7 @@ This framework’s all about asking ourselves tough questions. Traversability’
 * **Explorability**: how much content does the player see in a complete playthrough?
 * **Replayability**: how many times is the player replaying the same content?
 * **Reusability**: how often could you reuse content in different contexts in a playthrough? How many different prospective playthroughs could content reappear in?
-* **Contextuality**: how reactive/dependent is the content to player interaction/game state, and how large is that state space? How granular?
+* **Contextuality**: how reactive / dependent is the content to player interaction / game state, and how large is that state space? How granular?
 
 The answers to these Traversability questions determine the _scale_ of what we’re asking our writers and narrative designers to do. If you want to get more detail on this, I talk about it more in [this dissertation section](https://escholarship.org/uc/item/4dq8w2g9#page=25).
 
@@ -140,22 +140,20 @@ The answers to these Authorability questions determine the _difficulty_ of what 
 
 ## How Do I Know I’m In Trouble?
 
-That’s great as an abstract thing, but what are “good” answers to those questions? How do we know we’re in trouble? For each of these qualities, they have desired values of Low or High. Here are some examples of bad situations to help illustrate: \
-
-
+That’s great as an abstract thing, but what are “good” answers to those questions? How do we know we’re in trouble? For each of these qualities, they have desired values of Low or High. Here are some examples of bad situations to help illustrate:
 
 
 * **High Proficiency**: writers have to write in a text editor using a custom JSON data format you’re parsing into the engine, submit scripts into a version control system like Git or Perforce, and run build processes to see their content in-game
-    * _Why is that bad?_  \
+    * _<span style="color:#f30000">Why is that bad?</span>_  \
 You’re not only decreasing your pool of talent by requiring technical skills, you’re pulling them out of creative space by forcing them to engage the “technical side of their brain” as part of the creative process.
 * **High Complexity**: in order to author a piece of content you need writers to create three different pieces of content in different formats and different files, synchronized by a unique id, each with different authoring requirements.
-    * _Why is that bad?_  \
+    * _<span style="color:#f30000">Why is that bad?</span>_  \
 Requiring lots of context switching makes it difficult to get into a flow state while being creative, and you introduce more failure points where formatting errors can force writers into a debugging role instead of managing the content they’re creating.
 * **Low Clarity**: writers have to write character vignettes that may show up in a variety of different circumstances, but still need to accomplish very specific dramatic goals, and they have to track that manually, or maybe it’s unclear where the vignettes will show up contextually. 
-    * _Why is that bad?_  \
+    * _<span style="color:#f30000">Why is that bad?</span>_  \
 Requiring writers to manually track this means they end up doing more context checking than actual writing, which slows production and can lead to content that has to be thrown away or re-done because it doesn’t fit.
 * **Low Controllability**: writers have no way to test when content shows up, or the methods of controlling where it shows up are too unreliable to consistently use.
-    * _Why is that bad?_  \
+    * _<span style="color:#f30000">Why is that bad?</span>_  \
 Because writers don’t have a good way to test how content appears, or the system showing it is too unpredictable, or production demands emergent narrative always conforms to rigid guidelines, writers spend more time trying to find the “correct” spot to write in, than actually writing in it! 
 
 In a lot of projects, the failure state of dynamic content is static content. So in many of these situations, there’s a risk that writers end up only writing content in a static manner within a dynamic system, either because there aren’t adequate QA tools to reassure production or stakeholders that unexpected things won’t happen, or making content is so complex they have to stick to simple patterns in order to understand what the system’s doing. Either way, you end up wasting engineering supporting a dynamic system that only actually has stakeholder buy-in for static content, or the ability of your writers to create effectively static content with it!
@@ -167,9 +165,7 @@ So the key takeaway is that if Authorability in your project is low, even small-
 
 Well great, so according to this metric your project’s in trouble. How do you fix this? You can either try to lower Traversability, or increase Authorability.
 
-Reducing Traversability is essentially cutting scope, which is familiar territory to anyone in game dev. The general vibe is trying to reduce the amount of game state you need to cover, and reduce the complexity of content needed to do that (which is usually where Replayability, Reusability, and Contextuality come in on the authoring side). If you don’t mind repetitive content because you’re making a cool Roguelike game, then fine! Use whichever version makes your life easier. You know which one it is. It’s the one you don’t want to do.  \
-
-
+Reducing Traversability is essentially cutting scope, which is familiar territory to anyone in game dev. The general vibe is trying to reduce the amount of game state you need to cover, and reduce the complexity of content needed to do that (which is usually where Replayability, Reusability, and Contextuality come in on the authoring side). If you don’t mind repetitive content because you’re making a cool Roguelike game, then fine! Use whichever version makes your life easier. You know which one it is. It’s the one you don’t want to do.
 
 
 * **_Lowering_ Explorability** \
@@ -181,9 +177,7 @@ If it’s too difficult to make content systemic enough it can be reused in lots
 * **_Lowering_ Contextuality** \
 Stop trying to represent so many narrative things contextually to your system, and instead lean into the reader’s [apophenia](https://en.wikipedia.org/wiki/Apophenia) to read patterns into things that aren’t there. With skillful design and writing you can get further than you may think!
 
-It broke my heart to even write that advice. So the other side of the coin is to keep your Explorability where it’s at, but you need to increase Authorability ASAP! You can do that by: \
-
-
+It broke my heart to even write that advice. So the other side of the coin is to keep your Explorability where it’s at, but you need to increase Authorability ASAP! You can do that by:
 
 
 * **_Lowering_ required Proficiency** \
@@ -202,7 +196,7 @@ So in general, you want to increase Authorability through authoring tools, or st
 
 Instead of waiting until you’re in trouble, you can also try applying this framework at various project stages to inform decisions you make as you move from prototyping through production, and the last push before shipping.
 
-**Pre-production**
+### Pre-production
 
 
 
@@ -215,18 +209,16 @@ Instead of waiting until you’re in trouble, you can also try applying this fra
 
 One of the most important things coming out of pre-production on dynamic narrative games is having a clear sense of Traversability and Authorability. You want to know roughly how much content you’re going to need to ship, and have a rough sense of what the authoring experience is going to be for that. Inevitably going from prototypes to the real thing involves cutting back on generativity in some way, so you want to be well-positioned to make sure those cuts are as _effective_ as possible, without hurting the core pillars of the game.
 
-**Production**
+### Production
 
 Every dynamic narrative system has authoring patterns or templates. These patterns may have generalizable attributes cross-system or between families of systems, but usually they’re specific to the project’s architecture and experience design. Recognizing and codifying these patterns can increase Clarity, because once you develop them as templates, you don’t have to do that initial cognitive work again. So as content creation begins,
-
-
 
 * identify content dynamics that repeatedly make good content
 * codify / parameterize them through narrative design
 * make it easy to re-deploy them through authoring guidelines or bespoke templates
 * Get specific! What kinds of choice dilemmas are juicy? What kinds of context-triggered vignettes spark joy? What is a pattern that will still delight the player even if it’s the fiftieth time they’ve seen it under different circumstances?
 
-**Late production (when it’s time to cut)**
+### Late production (when it’s time to cut)
 
 All dynamic narrative systems have a baseline of complexity. That complexity allows a specific set of expressive affordances. So far I’ve been talking as if all a game’s narrative content is monolithic and homogenous, but in practice that’s never the case! You can tweak specific parts of your narrative to showcase the system, then dial it back. So when looking for things to cut,
 
@@ -249,6 +241,7 @@ That’s it!
 
 Well, not really. If you wanted to read more, I suggest the [Introduction](https://escholarship.org/uc/item/4dq8w2g9) and [Conclusion](https://escholarship.org/uc/item/4dq8w2g9#page=324) of [my dissertation](https://github.com/Logodaedalus/dissertation/blob/e9db6edd68877204f3eff51d12b461a2057639f7/Jacob%20Garbe-Increasing%20Authorial%20Leverage%20In%20Generative%20Narrative%20Systems.pdf). If you’re thirsting for another 320 pages about it and the narrative systems I developed that led me to this framework, along with some juicy related work of historical interest, read the rest! Hopefully this framework can be useful to you as you make your way through the jungle of planning, creating, and _finishing_ a dynamic narrative game. There are so many interesting stories to tell, and so many intriguing ways to tell them! Again, the main challenge I see facing creators of dynamic narrative games isn’t engineering of systems to tell their stories, but the design and production “technologies” needed to effectively create a plan and see it through. This framework is hopefully one such technology. May it point the way for you to even greater things!
 
+------
 
 ## Notes
 
