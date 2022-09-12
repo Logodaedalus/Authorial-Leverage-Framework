@@ -3,6 +3,22 @@
 
 @import "{{ site.theme }}";
 
+body {
+	color: #fff6e4;
+	font: 15px/1.5"OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+h1 {
+	color: #ffd280;
+	font-size: 35px;
+}
+
+h2 {
+	margin: 45px 0 15px;
+	color: #ffd280;
+	font-size: 27px;
+}
+
 section {
 	max-width: 80%;
 	margin: 20px auto;
@@ -10,4 +26,9 @@ section {
 
 .wrapper {
 	max-width: 80%
+}
+
+ul {
+	list-style-image: none;
+    list-style-type: disc;
 }

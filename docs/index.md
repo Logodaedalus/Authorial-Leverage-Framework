@@ -183,7 +183,7 @@ It broke my heart to even write that advice. So the other side of the coin is to
 
 
 
-* **_Lowering_ required Proficiency ** \
+* **_Lowering_ required Proficiency** \
 Don’t make your writers learn highly-technical tools / syntax. Try to keep authoring as intuitive and low-tech as possible, or commit more to custom tooling so writers can focus on what they’re good at: writing.
 * **_Lowering_ authoring Complexity** \
 Reduce how many different steps it takes to make a thing, and automate as much as possible. Cut down on repetitive data entry, and maximize the time your writers spend writing!
