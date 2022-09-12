@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Hey, I’m Jacob! I’m a technical narrative designer. I co-created [Ice-Bound](https://www.ice-bound.com/), an award-winning indie narrative game, and have developed dynamic narrative systems for a variety of industry studios over the last seven years. This article distills the framework I created while researching authoring for narrative systems for my PhD, and later refined during my journey in industry. It’s about how to manage scope when creating dynamic narrative systems for games. Specifically, it centers on increasing authorial leverage –or how easily content can be created–for dynamic narrative games.
+Hey, I’m Jacob! I’m a technical narrative designer. I co-created [Ice-Bound](https://www.ice-bound.com/), an award-winning indie narrative game, and have developed dynamic narrative systems for a variety of industry studios over the last seven years. This article distills the framework I created while researching authoring for narrative systems for my PhD, and later refined during my journey in industry. It’s about how to manage scope when creating dynamic narrative systems for games. Specifically, it centers on increasing authorial leverage--or how easily content can be created--for dynamic narrative games.
 
 Originally I wrote this just for narrative designers and writers, but it’s meant to be used holistically by engineers and producers as well, because many of these considerations cut across disciplines and departments, even though they mainly concern narrative content. I tried to simplify everything down as much as possible to make it (hopefully) approachable. If you want to read a more expanded and detailed breakdown, you can [check out my dissertation](https://escholarship.org/uc/item/4dq8w2g9).
 
